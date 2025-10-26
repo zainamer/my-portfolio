@@ -33,7 +33,6 @@ h2{
 
 .container {
    width: 80%;
-   height: 100%;
    margin: 10px auto;
 
    display: flex;
@@ -80,104 +79,18 @@ header .container .right button:hover {
    border: 1px solid white;
 }
 
-main .section {
-   height: 550px;
-}
 
-main .section .left {
-   width: 50%;
-}
 
-main .section .left img {
+footer{
+   background-color: black;
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
    width: 100%;
-   border-radius: 50%;
-   background: none;
-   filter: drop-shadow(5px 5px 20px #3cabe1);
-}
-
-main .section .right {
-   width: 60%;
-}
-main .section .right span{
-   color: #3cabe1;
-   font-size: 28px;
-}
-
-main .section .right p {
-   margin: 40px 0;
-}
-
-main .section .right .logos {
-   margin-top: 20px;
-   display: flex;
-   gap: 10px;
-   font-size: 20px;
-}
-
-main .section .right .btns {
-   display: flex;
-   gap: 20px;
-   margin-top: 15px;
-}
-
-main .section .right .btns button {
-   padding: 5px 15px;
-   background-color: transparent;
-   border: 2px solid #3cabe1;
-   border-radius: 5px;
-   color: #3cabe1;
-   font-weight: bold;
-
-}
-
-main .section .right .btns button:hover {
-   background-color: #3cabe1;
-   color: #001c34;
-   scale: 1.05;
-}
-
-footer {
-   display: flex;
-   justify-content: space-around;
-}
-
-footer .one {
-   border-left: 1px solid white;
-   width: 25%;
-   padding: 20px;
-
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-}
-
-footer .one p {
-   color: #3cabe1;
 }
 
 @media (max-width: 850px) {
-   body {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      background-color: #001c34;
-      color: white;
-   }
-   
-   ul li {
-      list-style: none;
-   }
-   
-   a {
-      color: white;
-      text-decoration: none;
-   }
-   
-   a:hover {
-      color: #3cabe1;
-      font-size: 1.01em;
-      text-decoration: underline;
-   }
    h1{
       font-size: 32px;
    }
@@ -213,40 +126,4 @@ footer .one p {
    header #bar{
       display: block;
    }
-   /* 444444444444444444444444444444444444444444444444444444444444444444 */
-   main .section {
-      height: auto;
-   }
-   main .section .container{
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-   }
-   main .section .left {
-      width: 100%;
-   }
-   
-   main .section .right {
-      width: 100%;
-   }
-   
-   footer {
-      flex-direction: column;
-   }
-   footer h2{
-      font-size: 28px;
-   }
-   
-   footer .one {
-      border-left: 1px solid white;
-      width: auto;
-   
-   
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      gap: 10px;
-   }
-   
-   
  }
