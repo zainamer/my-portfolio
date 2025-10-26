@@ -41,7 +41,15 @@ h2{
    justify-content: space-between;
 }
 
-
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 5px;
+}
+header #bar{
+   display: none;
+}
 header .container .left h2 span {
    color: #3cabe1;
 }
@@ -53,6 +61,10 @@ header .container .middle ul {
 
 header .container .right {
    border-left: 2px solid #3cabe1;
+   
+}
+header .container .right #bar{
+   display: none;
 }
 
 header .container .right button {
@@ -69,7 +81,7 @@ header .container .right button:hover {
 }
 
 main .section {
-   height: 80vh;
+   height: 550px;
 }
 
 main .section .left {
@@ -144,3 +156,97 @@ footer .one {
 footer .one p {
    color: #3cabe1;
 }
+
+@media (max-width: 850px) {
+   body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #001c34;
+      color: white;
+   }
+   
+   ul li {
+      list-style: none;
+   }
+   
+   a {
+      color: white;
+      text-decoration: none;
+   }
+   
+   a:hover {
+      color: #3cabe1;
+      font-size: 1.01em;
+      text-decoration: underline;
+   }
+   h1{
+      font-size: 32px;
+   }
+   
+   header .container {
+      width: auto;
+      margin: 0;
+   }
+   
+   header .container .left h2{
+      padding-right:20px;
+   }
+   header .container .left h2 span {
+      color: #3cabe1;
+   }
+   
+   header .container .middle ul {
+      position:absolute;
+      top: 2px;
+      right: 2px;
+      background-color: #3cabe1;
+      
+      flex-direction: column;
+   }
+   header .container .middle ul li{
+      padding: 5px 15px;
+      
+   }
+   header .container .middle ul li a:hover{
+      color: #001c34;
+   }
+   
+   header #bar{
+      display: block;
+   }
+   /* 444444444444444444444444444444444444444444444444444444444444444444 */
+   main .section {
+      height: auto;
+   }
+   main .section .container{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+   }
+   main .section .left {
+      width: 100%;
+   }
+   
+   main .section .right {
+      width: 100%;
+   }
+   
+   footer {
+      flex-direction: column;
+   }
+   footer h2{
+      font-size: 28px;
+   }
+   
+   footer .one {
+      border-left: 1px solid white;
+      width: auto;
+   
+   
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+   }
+   
+   
+ }
