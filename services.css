@@ -47,35 +47,7 @@ main .container .card button:hover{
       flex-direction: column
    }
    main .container .card{
-      
-      background-color: #000e1a;
-      background: linear-gradient(50deg, #3cabe1, #000e1a);
-      border-radius: 10px;
-      padding: 10px;
+      margin: 30px 0;
    }
-   main .container .card:hover{
-      scale: 1.02;
-      box-shadow: 5px 5px 20px #3cabe1;
-   }
-   main .container .card i{
-      font-size: 24px;
-      margin: 5px;
-   }
-   main .container .card h3{
-      font-size: x-large;
-      color: #000e1a;
-      margin: 15px 0;
-   }
-   main .container .card button{
-      padding: 5px 15px;
-      margin: 20px 0;
-      border-radius: 5px;
-      background-color: #3cabe1;
-      color: #000e1a;
-   }
-   main .container .card button:hover{
-      background-color: #001c34;
-      color: white;
-      border: none;
-   }
+   
 }

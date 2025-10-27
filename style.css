@@ -24,10 +24,12 @@ a:hover {
    font-size: 1.01em;
    text-decoration: underline;
 }
-h1{
+
+h1 {
    font-size: 42px;
 }
-h2{
+
+h2 {
    font-size: 34px;
 }
 
@@ -40,15 +42,17 @@ h2{
    justify-content: space-between;
 }
 
-header{
+header {
    display: flex;
    align-items: center;
    justify-content: space-between;
    margin: 5px;
 }
-header #bar{
+
+header #bar {
    display: none;
 }
+
 header .container .left h2 span {
    color: #3cabe1;
 }
@@ -60,9 +64,10 @@ header .container .middle ul {
 
 header .container .right {
    border-left: 2px solid #3cabe1;
-   
+
 }
-header .container .right #bar{
+
+header .container .right #bar {
    display: none;
 }
 
@@ -81,7 +86,7 @@ header .container .right button:hover {
 
 
 
-footer{
+footer {
    background-color: black;
    text-align: center;
    padding: 10px;
@@ -91,39 +96,60 @@ footer{
 }
 
 @media (max-width: 850px) {
-   h1{
+   h1 {
       font-size: 32px;
    }
-   
+   body{
+      overflow: hidden;
+   }
    header .container {
       width: auto;
       margin: 0;
    }
-   
-   header .container .left h2{
-      padding-right:20px;
+
+   header .container .left h2 {
+      padding-right: 20px;
    }
+
    header .container .left h2 span {
       color: #3cabe1;
    }
-   
+
    header .container .middle ul {
-      position:absolute;
+      display: none;
+      position: absolute;
       top: 2px;
       right: 2px;
       background-color: #3cabe1;
-      
+      padding-top: 8px;
+      margin-top: 40px;
       flex-direction: column;
    }
-   header .container .middle ul li{
+
+   header .container .middle ul li {
       padding: 5px 15px;
-      
    }
-   header .container .middle ul li a:hover{
+
+   header .container .middle ul li a:hover {
       color: #001c34;
    }
-   
-   header #bar{
+
+   header #bar {
       display: block;
+      z-index: 2;
    }
- }
+}
+
+@keyframes show {
+   from {
+      transform: translate(100px, 0);
+   }
+
+   to {
+      transform: translate(0, 0);
+   }
+}
+
+.show {
+   animation: show 1s forwards;
+}
